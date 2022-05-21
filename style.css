@@ -1,0 +1,208 @@
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.canvas{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf1f1;
+  width:100%;
+  height:100vh;
+}
+.circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80vmin;
+  height:80vmin;
+  border-radius: 50%;
+  background-color:#f9e0ae ;
+}
+.pot{
+  position: absolute;
+  border-bottom: 23vmin solid #835050;
+  border-left: 6vmin solid transparent;
+  border-right: 6vmin solid transparent;
+  height: 0;
+  width: 35vmin;
+  bottom:15vmin;
+  transform:rotate(180deg);
+  border-radius: 3vmin;
+}
+.pot::after{
+  content: "";
+  position: absolute;
+  width:23vmin;
+  height:1vmin;
+  background-color: black;
+}
+.eyes{
+  position: absolute;
+  width:5vmin;
+  height: 5vmin;
+  background-color: black;
+  border-radius: 50%;
+  bottom:-15vmin;
+  right:15vmin;
+  box-shadow: 13vmin 0 black;
+  /* animation: blink 1s infinite; */
+}
+@keyframes blink{
+  0%{ transform: scale(1,0.1);}
+
+  100%{transform: scale(1,1);}
+}
+.cheeks{
+  position: absolute;
+  width:5vmin;
+  height:2vmin;
+  top:8.2vmin;
+  left:2vmin;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 20%;
+  box-shadow: 14vmin 0 red;
+}
+.mouth{
+  position: absolute;
+  width:4vmin;
+  height:4vmin;
+  border-radius: 50%;
+  background-color: transparent;
+  top:5vmin;
+  left:10vmin;
+  border-top: 1vmin solid black;
+}
+.cactus{
+  position: absolute;
+  width:15vmin;
+  height:30vmin;
+  top:18vmin;
+  left:27vmin;
+  background-color:#799351 ;
+  border-radius: 45%;
+  border: 1vmin solid black;
+}
+.cactus::before{
+  content: "";
+  position: absolute;
+  width:5vmin;
+  height:30vmin;
+  left:5vmin;
+  border-radius: 50%;
+  background-color: transparent;
+  border-right: 1vmin solid #335d2d;
+}
+.cactus::after{
+  content: "";
+  position: absolute;
+  width:5vmin;
+  height:30vmin;
+  right:5vmin;
+  border-radius:50%;
+  background-color: transparent;
+  border-left: 1vmin solid #335d2d;
+}
+.cactusSmall{
+  position: absolute;
+  width:16vmin;
+  height:20vmin;
+  top:25vmin;
+  left:36vmin;
+  background-color:#799351 ;
+  border-radius: 45%;
+  border: 1vmin solid black;
+}
+.cactusSmall::before{
+  content: "";
+  position: absolute;
+  width:5vmin;
+  height:20vmin;
+  left:5vmin;
+  border-radius: 50%;
+  background-color: transparent;
+  border-right: 1vmin solid #335d2d;
+}
+.cactusSmall::after{
+  content: "";
+  position: absolute;
+  width:5vmin;
+  height:20vmin;
+  right:5vmin;
+  border-radius:50%;
+  background-color: transparent;
+  border-left: 1vmin solid #335d2d;
+}
+.pricks{
+  position: absolute;
+  width:0;
+  height:0;
+  border-left:1vmin solid transparent;
+  border-right:1vmin solid transparent;
+  border-bottom: 7vmin solid #335d2d;
+  transform: rotate(-45deg);
+}
+.pricks::before{
+  content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    top:5vmin;
+    left:8vmin;
+    border-left:1vmin solid transparent;
+    border-right:1vmin solid transparent;
+    border-bottom: 7vmin solid #335d2d;
+    transform: rotate(90deg);
+}
+.pricks::after{
+  content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    top:7vmin;
+    left:-12vmin;
+    border-left:1vmin solid transparent;
+    border-right:1vmin solid transparent;
+    border-bottom: 7vmin solid #335d2d;
+}
+.pricksRight{
+  position: absolute;
+  width:0;
+  height:0;
+  top:-2vmin;
+  left:-1vmin;
+  border-left:1vmin solid transparent;
+  border-right:1vmin solid transparent;
+  border-bottom: 7vmin solid #335d2d;
+  transform: rotate(-45deg);
+}
+.pricksRight::before{
+  content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    top:10vmin;
+    left:8vmin;
+    border-left:1vmin solid transparent;
+    border-right:1vmin solid transparent;
+    border-bottom: 7vmin solid #335d2d;
+    transform: rotate(90deg);
+}
+.pricksRight::after{
+  content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    top:4vmin;
+    left:7vmin;
+    border-left:1vmin solid transparent;
+    border-right:1vmin solid transparent;
+    border-bottom: 7vmin solid #335d2d;
+    transform: rotate(60deg);
+
+}
